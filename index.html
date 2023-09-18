@@ -14,6 +14,8 @@
   </head>
   <body>
     <div class="container">
+
+       <!-- navigation -->
       <nav
         class="d-flex flex-column flex-md-row justify-content-between align-items-center"
         style="margin: 10px 0"
@@ -44,9 +46,9 @@
         </ul>
       </nav>
 
-      <header>
+      <header class="position-relative">
         <div
-          class="row d-flex flex-column-reverse flex-md-row text-white text-center text-md-start"
+          class="row d-flex flex-column-reverse flex-md-row text-white text-center text-md-start position-relative"
         >
           <div class="col-12 col-md-7 info">
             <img src="./assets/images/header-side.png" class="header-img" />
@@ -456,111 +458,91 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <footer id="contact" class="my-3">
-        <div class="row py-5">
-          <div class="col-12 col-lg-6 ps-4">
-            <h1 class="display-1 text-white fw-bold">Contact</h1>
-            <p class="footer-content w-75 mt-4">
-              I would love to hear about your project and how I could help.
-              Please fill in the form, and I’ll get back to you as soon as
-              possible.
-            </p>
+    <!-- footer -->
+    <div class="footer-contact">
+      <div class="container">
+        <footer id="contact" class="my-3">
+          <div class="row py-5">
+            <div class="col-12 col-lg-6 ps-4">
+              <h1 class="display-1 text-white fw-bold">Contact</h1>
+              <p class="footer-content w-75 mt-4">
+                I would love to hear about your project and how I could help.
+                Please fill in the form, and I’ll get back to you as soon as
+                possible.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 py-3">
+              <form class="needs-validation" novalidate>
+                <div>
+                  <input type="text" class="form-control bg-transparent text-white mb-3" placeholder="name" required />
+                  <div class="valid-feedback text-end pe-3">Looks good!</div>
+                  <div class="invalid-feedback text-end pe-3">
+                    Please add Name
+                  </div>
+                </div>
+        
+                <div>
+                  <input type="email" class="form-control bg-transparent text-white mb-3" name="email" placeholder="email"
+                    id="email" required />
+                  <div class="valid-feedback text-end pe-3">Looks good!</div>
+                  <div class="invalid-feedback text-end pe-3">
+                    Sorry, invalid format here
+                  </div>
+                </div>
+        
+                <div>
+                  <textarea class="form-control bg-transparent text-white mb-3" placeholder="message" rows="3" name="message"
+                    id="message" required></textarea>
+                  <div class="valid-feedback text-end pe-3">Looks good!</div>
+                  <div class="invalid-feedback text-end pe-3">
+                    Please add a message
+                  </div>
+                </div>
+        
+                <button type="submit"
+                  class="submit-btn bg-transparent border-0 outline-0 float-end me-3 my-4 text-white text-uppercase fw-bold pb-1">
+                  send message
+                </button>
+              </form>
+            </div>
           </div>
-          <div class="col-12 col-lg-6 py-3">
-            <form class="needs-validation" novalidate>
-              <div>
-                <input
-                  type="text"
-                  class="form-control bg-transparent text-white mb-3"
-                  placeholder="name"
-                  required
-                />
-                <div class="valid-feedback text-end pe-3">Looks good!</div>
-                <div class="invalid-feedback text-end pe-3">
-                  Please add Name
-                </div>
-              </div>
-
-              <div>
-                <input
-                  type="email"
-                  class="form-control bg-transparent text-white mb-3"
-                  name="email"
-                  placeholder="email"
-                  id="email"
-                  required
-                />
-                <div class="valid-feedback text-end pe-3">Looks good!</div>
-                <div class="invalid-feedback text-end pe-3">
-                  Sorry, invalid format here
-                </div>
-              </div>
-
-              <div>
-                <textarea
-                  class="form-control bg-transparent text-white mb-3"
-                  placeholder="message"
-                  rows="3"
-                  name="message"
-                  id="message"
-                  required
-                ></textarea>
-                <div class="valid-feedback text-end pe-3">Looks good!</div>
-                <div class="invalid-feedback text-end pe-3">
-                  Please add a message
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                class="submit-btn bg-transparent border-0 outline-0 float-end me-3 my-4 text-white text-uppercase fw-bold pb-1"
-              >
-                send message
-              </button>
-            </form>
+        
+          <div style="
+                    width: 100%;
+                    height: 2px;
+                    background-color: #979797;
+                    width: 98%;
+                    margin: 0 auto;
+                  "></div>
+        
+          <div class="footer-links px-3 mt-5 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <h2 class="fw-bold text-white fs-3">hamza-sys</h2>
+        
+            <ul class="d-flex justify-content-center align-items-center gap-4">
+              <li>
+                <a class="text-white" href=""><i class="fa-brands fa-github fa-xl"></i></a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/icons/frontendmentor.svg" />
+                </a>
+              </li>
+              <li>
+                <a class="text-white" href="">
+                  <i class="fa-brands fa-linkedin fa-xl"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white" href="">
+                  <i class="fa-brands fa-twitter fa-xl"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-
-        <div
-          style="
-            width: 100%;
-            height: 2px;
-            background-color: #979797;
-            width: 98%;
-            margin: 0 auto;
-          "
-        ></div>
-
-        <div
-          class="footer-links px-3 mt-5 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
-        >
-          <h2 class="fw-bold text-white fs-3">hamza-sys</h2>
-
-          <ul class="d-flex justify-content-center align-items-center gap-4">
-            <li>
-              <a class="text-white" href=""
-                ><i class="fa-brands fa-github fa-xl"></i
-              ></a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./assets/icons/frontendmentor.svg" />
-              </a>
-            </li>
-            <li>
-              <a class="text-white" href="">
-                <i class="fa-brands fa-linkedin fa-xl"></i>
-              </a>
-            </li>
-            <li>
-              <a class="text-white" href="">
-                <i class="fa-brands fa-twitter fa-xl"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
 
     <script src="script.js"></script>
